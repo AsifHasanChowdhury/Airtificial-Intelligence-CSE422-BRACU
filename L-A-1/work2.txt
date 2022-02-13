@@ -1,0 +1,5 @@
+3
+3
+A H H H A
+T T T H A
+H H T H A

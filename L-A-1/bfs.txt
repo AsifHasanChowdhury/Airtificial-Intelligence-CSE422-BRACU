@@ -1,0 +1,34 @@
+import numpy as dp
+f=open ("F:\\CSE422\\New folder\\work.txt" , "r")
+lst=[]
+line=f.readline().strip()
+lst.append(line)  
+count=0
+arr_zeros=dp.zeros((count,count),dtype=str)
+
+while line:    
+    count=count+1
+    line=f.readline().strip() #used strip for ignore empty space
+    lst.append(line)     
+    
+    #used read line to read every line
+arr_zeros=dp.zeros((count,count),dtype=str)
+
+for i in int(count):
+    for j in int(count):
+        arr_zeros[i,j]= f.readline().strip()
+    
+
+
+
+
+
+         right=[u,v+1]
+         left=[u,v-1]
+         up=[u-1,v]
+         down=[u+1,v]
+         right_up_diagonal=[u-1,v+1]
+         left_up_diagonal=[u-1,v-1]
+         right_down_diagonal=[u+1,v+1]
+         left_down_diagonal=[u+1,v-1]
+         lst=[[u,v+1],[u,v-1],[u-1,v],[u-1,v+1],[u-1,v-1],[u+1,v+1],[u+1,v+1],[u+1,v-1]]
